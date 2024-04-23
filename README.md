@@ -1,16 +1,13 @@
-# park_manager
+# Park Manager
 
-A new Flutter project.
+Um aplicativo de gestão de estacionamento que salva localmente quais vagas estão ocupadas e registra um histórico sobre a entrada e saída de cada veículo.
 
-## Getting Started
+## Construção
+Execute `flutter pub get` antes de rodar o app pela primeira vez. Isso garante que você obtenha todas as dependências listadas no __pubspec.yaml__.
 
-This project is a starting point for a Flutter application.
+## Arquitetura
+Na camada de Apresentação (Presentation) eu uso BLoC para gerenciar o estado e divido minhas camadas conforme o Clean Architecture sugere, da seguinte forma:
+![clean_arch](https://github.com/Rofuscaldi/ParkManager/assets/167842968/486781bc-ca83-4d0b-a366-664e6af2d3ff)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Teste
+Execute `flutter test` para executar todos os testes.
